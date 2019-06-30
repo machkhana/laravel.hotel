@@ -7,7 +7,7 @@
             </div>
             <div class="user-info mb-2">
                 <h4 class="font-weight-semibold text-dark mb-1">{{ Auth::user()->name }}</h4>
-                <span class="mb-0 text-muted">Ui Designer</span>
+                <span class="mb-0 text-muted">Hotel</span>
             </div>
             <a href="#" title="settings" class="user-button"><i class="fa fa-cog"></i></a>
             <a href="#" title="Comments" class="user-button"><i class="fa fa-comments"></i></a>
@@ -16,10 +16,10 @@
     </div>
     <ul class="side-menu">
         <li class="slide">
-            <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fa fa-desktop"></i><span class="side-menu__label">Home</span><i class="angle fa fa-angle-right"></i></a>
+            <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fa fa-desktop"></i><span class="side-menu__label">ჯავშნები</span><i class="angle fa fa-angle-right"></i></a>
             <ul class="slide-menu">
-                <li><a class="slide-item" href="index-2.html">IT Dashboard</a></li>
-                <li><a class="slide-item" href="index2.html">Service Dashboard</a></li>
+                <li><a class="slide-item" href="{{route('booking.create')}}">დაჯავშანა</a></li>
+                <li><a class="slide-item" href="index2.html">სია</a></li>
                 <li><a class="slide-item" href="index3.html">Gaming Dashboard</a></li>
                 <li><a class="slide-item" href="index4.html">Big DataDashboard</a></li>
                 <li><a class="slide-item" href="index5.html">Crypto Currency</a></li>

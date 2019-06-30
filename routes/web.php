@@ -16,5 +16,8 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::group(['midleware'=>'auth'],function (){
+    Route::get('/', 'DashboardController@index')->name('dashboard');
+    Route::resource('/booking', 'BookingController');
+});
 
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
